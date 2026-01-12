@@ -67,14 +67,11 @@ object Onexeor : MobileArchitect {
 
 <div align="center">
 
-<!-- Profile Summary Cards (more reliable alternative) -->
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=onexeor&theme=github_dark" />
+<img src="./profile-summary-card-output/2077/0-profile-details.svg" width="808" />
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=onexeor&theme=github_dark" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=onexeor&theme=github_dark&utcOffset=1" />
+<img src="./profile-summary-card-output/2077/1-repos-per-language.svg" width="400" /> <img src="./profile-summary-card-output/2077/2-most-commit-language.svg" width="400" />
 
-<!-- Streak Stats -->
-<img src="https://streak-stats.demolab.com?user=onexeor&theme=github-dark-blue&hide_border=true&background=0D1117&ring=00FFF9&fire=FF00FF&currStreakLabel=00FFF9" />
+<img src="./profile-summary-card-output/2077/3-stats.svg" width="400" /> <img src="./profile-summary-card-output/2077/4-productive-time.svg" width="400" />
 
 </div>
 
@@ -83,9 +80,9 @@ object Onexeor : MobileArchitect {
 ## 🐍 Contribution Snake
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/onexeor/onexeor/blob/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/onexeor/onexeor/blob/output/github-snake.svg" />
-  <img alt="github-snake" src="https://github.com/onexeor/onexeor/blob/output/github-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="./profile-summary-card-output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./profile-summary-card-output/snake.svg" />
+  <img alt="Snake animation" src="./profile-summary-card-output/snake.svg" />
 </picture>
 
 ---
