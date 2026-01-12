@@ -2,8 +2,8 @@ name: Generate Profile Assets
 
 on:
   schedule:
-    - cron: "0 */12 * * *"  # every 12 hours
-  workflow_dispatch:  # manual run
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
 
 jobs:
   build:
@@ -31,13 +31,13 @@ jobs:
             dist/snake.svg
             dist/snake-dark.svg?palette=github-dark
 
+      # 3. Move snake files
       - name: Move snake to output folder
         run: |
-          mkdir -p profile-summary-card-output
-          mv dist/snake.svg profile-summary-card-output/
-          mv dist/snake-dark.svg profile-summary-card-output/
+          sudo mv dist/snake.svg profile-summary-card-output/
+          sudo mv dist/snake-dark.svg profile-summary-card-output/
 
-      # 3. Commit all
+      # 4. Commit all
       - name: Commit & Push
         run: |
           git config user.name "github-actions[bot]"
