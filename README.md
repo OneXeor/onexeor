@@ -93,10 +93,5 @@ object Onexeor : MobileArchitect {
 <div align="center">
 
 ![Profile Views](https://komarev.com/ghpvc/?username=onexeor&color=00fff9&style=flat-square&label=PROFILE+VIEWS)
-```
-// TODO: ship more side projects
-// TODO: contribute to open source
-// TODO: write technical articles
-```
 
 </div>
