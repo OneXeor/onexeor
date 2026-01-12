@@ -1,24 +1,47 @@
-name: Generate Snake
+name: Generate Profile Assets
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
-  workflow_dispatch:
+    - cron: "0 */12 * * *"  # every 12 hours
+  workflow_dispatch:  # manual run
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      
     steps:
+      - uses: actions/checkout@v4
+
+      # 1. Profile Summary Cards
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
+        with:
+          USERNAME: onexeor
+          BRANCH_NAME: main
+          UTC_OFFSET: 1
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+
+      # 2. Snake Animation
       - uses: Platane/snk@v3
         with:
           github_user_name: onexeor
           outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-            
-      - uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+            dist/snake.svg
+            dist/snake-dark.svg?palette=github-dark
+
+      - name: Move snake to output folder
+        run: |
+          mkdir -p profile-summary-card-output
+          mv dist/snake.svg profile-summary-card-output/
+          mv dist/snake-dark.svg profile-summary-card-output/
+
+      # 3. Commit all
+      - name: Commit & Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --quiet && git diff --staged --quiet || git commit -m "📊 Update profile assets"
+          git push
