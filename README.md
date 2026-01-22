@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Animated Typing Header -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=00FFF9&center=true&vCenter=true&width=700&lines=%3C+ONEXEOR+%2F%3E;Mobile+Architect+%7C+Tech+Lead;Kotlin+Multiplatform+%7C+Compose+%7C+Flutter)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=00FFF9&center=true&vCenter=true&width=700&lines=%3C+ONEXEOR+%2F%3E;Mobile+Architect+%7C+Tech+Lead;Kotlin+Multiplatform+%7C+Compose+%7C+SwiftUI)](https://git.io/typing-svg)
 
 [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/onexeor)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/onexeor)
